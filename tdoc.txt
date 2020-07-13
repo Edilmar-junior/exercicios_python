@@ -1,0 +1,12 @@
+import json
+
+opc = sys.argv[1]
+tipo = sys.argv[2]
+HOST = sys.argv[3]
+i = sys.argv[4]
+f = sys.argv[5]
+
+getcontext().prec = 5
+time_from  = int(datetime.datetime.strptime(i, '%d/%m/%Y %H:%M:%S').strftime("%s"))
+time_till  = int(datetime.datetime.strptime(f, '%d/%m/%Y %H:%M:%S').strftime("%s"))
+total = time_till - time_from
